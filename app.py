@@ -3,7 +3,6 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 
 from view_counter import view_counter
 
-BASE_PATH = "/counter"
 RUN_HOST = "localhost"
 RUN_PORT = "24409"
 
