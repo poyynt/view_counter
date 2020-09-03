@@ -1,5 +1,8 @@
+# view_counter
+Simple view counter with Python and Flask.
+Each "counter" is a uuid and its count gets updated after each request to it.
 
-To create the database:
+To create the database (first time only):
 ```
 $ sqlite3 counter.db
 sqlite> CREATE TABLE counters (
@@ -13,3 +16,5 @@ sqlite> CREATE TABLE counters (
    ...> );
 sqlite> .quit
 ```
+
+The svg image is made by [Alles](github.com/alleshq)
