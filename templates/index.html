@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Counter{% endblock %}
+{% block content %}
+<header>
+	<p>
+		Counter
+	</p>
+</header>
+<main>
+<p>
+	Use this image on a page you want to be counted. It updates itself on each view.
+</p>
+<p>
+	Image URL:
+</p>
+<pre id="link">{{ url_for(".counter", uuid = counter) }}</pre>
+</main>
+<script>
+	window.addEventListener("load", function() {
+		p = document.getElementById("link");
+		p.innerText = window.location.protocol + "//" + window.location.host + p.innerText;
+	});
+</script>
+{% endblock %}

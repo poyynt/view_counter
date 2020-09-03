@@ -1,0 +1,14 @@
+html, body {
+	margin: 0;
+}
+
+header {
+	background-color: #666;
+	color: white;
+	margin: 0;
+	padding: 0.1em 1em;
+}
+
+main {
+	padding: 0.5em 1em;
+}
