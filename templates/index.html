@@ -13,12 +13,6 @@
 <p>
 	Image URL:
 </p>
-<pre id="link">{{ url_for(".counter", uuid = counter) }}</pre>
+<pre id="link">{{ url_for(".counter", uuid = counter, _external = True) }}</pre>
 </main>
-<script>
-	window.addEventListener("load", function() {
-		p = document.getElementById("link");
-		p.innerText = window.location.protocol + "//" + window.location.host + p.innerText;
-	});
-</script>
 {% endblock %}
