@@ -29,4 +29,3 @@ def counter(uuid):
 @view_counter.route("/")
 def index():
     return render_template("index.html", counter = str(uuid4()))
-
