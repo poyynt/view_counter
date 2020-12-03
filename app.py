@@ -20,8 +20,7 @@ def fix_werkzeug_logging():
 
         if forwarded_for and forwarded_for[0]:
             return forwarded_for[0]
-        else:
-            return self.client_address[0]
+		return self.client_address[0]
 
     WSGIRequestHandler.address_string = address_string
 

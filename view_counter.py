@@ -15,7 +15,7 @@ def to_png(svg):
 
 @view_counter.route("/counter/<uuid>")
 def counter(uuid):
-    if uuid_validator.fullmatch(uuid) == None:
+    if uuid_validator.fullmatch(uuid) is None:
         return "error uuid wrong"
     with sqlite3.connect(DB) as db:
         cursor = db.cursor()
@@ -29,5 +29,4 @@ def counter(uuid):
 @view_counter.route("/")
 def index():
     return render_template("index.html", counter = str(uuid4()))
-
 
